@@ -11,7 +11,7 @@
 <html lang="en">
 
   <head>
-
+	
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -39,8 +39,9 @@ window.contextRoot = '${contextRoot}';
 
   
   
-  
   </head>
+
+
 
   <body>
 	
@@ -71,6 +72,11 @@ window.contextRoot = '${contextRoot}';
      <c:if test="${userClickAllProducts == true or userClickCategoryProducts == true }">
     <%@include file = "listProducts.jsp" %>
     </c:if>
+    
+      <!-- Show Product -->
+    	<c:if test="${userClickShowProduct == true }">
+    	<%@include file = "singleProduct.jsp" %>
+    	</c:if>
     
     </div>
     

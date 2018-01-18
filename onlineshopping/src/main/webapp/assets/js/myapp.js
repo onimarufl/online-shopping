@@ -1,3 +1,4 @@
+
 $(function(){
 	
 	switch(menu){
@@ -53,7 +54,13 @@ $(function(){
 				dataSrc:''
 			},
 			columns:[
-				
+				{
+					data: 'code',
+					mRender: function(data, type, row){
+						
+						return '<img src="'+window.contextRoot+'/resources/images/'+data+'.jpg" width="100"/>';
+					}
+				},
 			
 				{
 					data : 'name'
@@ -75,11 +82,11 @@ $(function(){
 					data : 'id',
 					mRender: function(data, type, row){
 						var str = '';
-						str += '<a href="'+window.contextRoot+'/show'+data+'/product">View</a>'
-						
+						str += '<a href="'+window.contextRoot+'/show/'+data+'/product" class="btn" >View</a> &#160;'  ;
+						str += '<a href="'+window.contextRoot+'/cart/add/'+data+'/product" class="btn" >Cart</span></a>';
 						return str;
-						0
-00	 				}
+						
+	 				}
 				}
 				
 			]
