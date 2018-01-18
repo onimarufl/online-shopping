@@ -20,4 +20,34 @@ $(function(){
 		
 	}
 	
+	//Data table
+	
+	//Data Set
+	
+	var products = [
+				
+			['1','ABC'],
+			['2','CYX'],
+			['3','PQR'],
+			['4','MNO'],
+			['5','WVB'],
+			['6','CFG'],
+			['7','HIK'],
+			['8','LMP']
+			
+	];	
+	
+	var $table = $('#productListTable');
+	
+	if($table.length){
+		
+		//console.log('Inside the table!')
+		
+		$table.DataTable({
+			
+			data : products
+			
+		});
+		
+	}
 });

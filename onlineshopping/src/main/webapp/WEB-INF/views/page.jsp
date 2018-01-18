@@ -79,6 +79,9 @@ window.menu = '${title}';
 	<!-- Codes Javascript -->
 	<script src="${js}/myapp.js"></script>
 	
+	<!-- Table -->
+	 <script src="${js}/jquery.dataTables.js"></script>
+	
 	</div>
   </body>
 
