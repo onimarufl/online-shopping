@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
     <%@taglib prefix = "c" uri="http://java.sun.com/jsp/jstl/core" %>
     <%@taglib prefix = "spring" uri="http://www.springframework.org/tags"%>
     
@@ -17,10 +17,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Online Shop - ${title}</title>
+    <title>ทดสอบ - ${title}</title>
 
 <script>
 window.menu = '${title}';
+window.contextRoot = '${contextRoot}';
 </script>
 
     <!-- Bootstrap core CSS -->
@@ -31,7 +32,14 @@ window.menu = '${title}';
 
     <!-- Custom styles for this template -->
     <link href="${css}/myapp.css" rel="stylesheet">
+    
+    
+    
 
+
+  
+  
+  
   </head>
 
   <body>
@@ -81,6 +89,8 @@ window.menu = '${title}';
 	
 	<!-- Table -->
 	 <script src="${js}/jquery.dataTables.js"></script>
+	 
+
 	
 	</div>
   </body>
